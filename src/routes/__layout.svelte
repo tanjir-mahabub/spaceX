@@ -1,7 +1,7 @@
 <script>
     import "../app.css";
-    import Nav from "../componentes/nav.svelte";
+    import Nav from "../componentes/Nav.svelte";
   </script>
   
   <Nav />
-  <slot />
+  <slot></slot>

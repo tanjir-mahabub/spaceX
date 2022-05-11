@@ -4,6 +4,6 @@
 
 <nav>
     <a href="/">Home</a>
-    <a href="/launch">Launches</a>
+    <a href="/launches">Launches</a>
     <a href="/launchpads">launchpads</a>
 </nav>
