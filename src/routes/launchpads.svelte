@@ -1,5 +1,5 @@
 <script>
-import LaunchPads from "../componentes/LaunchPads.svelte";    
+import LaunchPads from "../componentes/launchpads/LaunchPads.svelte";    
 </script>
 
 <svelte:head>

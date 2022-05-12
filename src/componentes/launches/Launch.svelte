@@ -1,5 +1,6 @@
 <script>
-    import launches from "../stores/fetchStore";
+    import launches from "../../stores/fetchStore";
+    import Search from "./Search.svelte";
 
     let url = "https://api.spacexdata.com/v4/launches";
 
@@ -13,5 +14,6 @@ Loading: {$loading}
 {:else if $error}
 Error: {$error}
 {:else}
-<pre>{JSON.stringify($data, null, 2)}</pre>
+<Search launches={$data} />
+<!-- <pre>{JSON.stringify($data, null, 2)}</pre> -->
 {/if}

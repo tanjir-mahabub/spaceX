@@ -1,6 +1,6 @@
 <script>
 
-import CompanyInfo from "../componentes/CompanyInfo.svelte";
+import CompanyInfo from "../componentes/company/CompanyInfo.svelte";
 
 </script>
 

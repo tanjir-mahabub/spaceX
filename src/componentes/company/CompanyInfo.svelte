@@ -1,5 +1,5 @@
 <script>
-    import company from "../stores/fetchStore";
+    import company from "../../stores/fetchStore";
 
     let url = "https://api.spacexdata.com/v4/company"
 	

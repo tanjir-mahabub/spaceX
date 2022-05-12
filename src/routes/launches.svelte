@@ -1,5 +1,5 @@
 <script>
-import Launch from "../componentes/Launch.svelte";
+import Launch from "../componentes/launches/Launch.svelte";
     
 </script>
 
