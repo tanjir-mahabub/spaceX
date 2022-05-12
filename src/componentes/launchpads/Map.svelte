@@ -16,7 +16,7 @@
 	function load() {
 		map = new mapbox.Map({
 			container,
-			style: 'mapbox://styles/mapbox/dark-v10',
+			style: 'mapbox://styles/tanjir2022/cl338sv07001f14t7zg1b6azd',
 			center: [lon, lat],
 			zoom,
 		});
@@ -36,7 +36,7 @@
 	/>
 </svelte:head>
 
-<div class="min-h-screen w-full container" bind:this={container}>
+<div class="min-h-screen w-full" bind:this={container}>
 	{#if map}
 		<slot />
 	{/if} 

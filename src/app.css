@@ -1,3 +1,14 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.mapPopup {
+    @apply shadow-lg;
+}
+.mapPopup .mapboxgl-popup-close-button {
+    @apply m-1 px-1 hover:shadow-sm focus:border-none bg-gray-50;
+}
+
+.mapPopup .mapboxgl-popup-content {
+    @apply p-5;
+}

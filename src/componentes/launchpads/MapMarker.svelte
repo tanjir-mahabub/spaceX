@@ -9,11 +9,18 @@
 	export let lon;
 	export let label;
 
-	const popup = new mapbox.Popup({ offset: 25 })
-		.setText(label);
+    let popupClass = 'p-3 my-class';
+
+	const popup = new mapbox.Popup({ 
+        closeOnClick: false, 
+         offset: 25,
+         className: 'mapPopup' })
+		.setHTML(label);
+    
 
 	const marker = new mapbox.Marker()
 		.setLngLat([lon, lat])
 		.setPopup(popup)
-		.addTo(map);
+		.addTo(map).togglePopup();;
+        
 </script>
