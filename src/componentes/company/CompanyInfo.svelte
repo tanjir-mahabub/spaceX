@@ -11,7 +11,11 @@
 {#if $loading}
 Loading: {$loading}
 {:else if $error}
-Error: {$error}
+<!-- Error: {$error} -->
+Nothing found!
 {:else}
-<pre>{JSON.stringify($data, null, 2)}</pre>
+<div class="container w-full mx-auto">
+
+    <!-- <pre>{JSON.stringify($data, null, 2)}</pre> -->
+</div>
 {/if}

@@ -38,7 +38,7 @@
 
 <div class="min-h-screen w-full" bind:this={container}>
 	{#if map}
-		<slot />
+		<slot />	
 	{/if} 
 </div>
 

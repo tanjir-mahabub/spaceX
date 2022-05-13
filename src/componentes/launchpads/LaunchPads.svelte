@@ -1,6 +1,6 @@
 <script>
     import launchpads from "../../stores/fetchStore";
-    import GoogleMap from "./GoogleMap.svelte";
+    import MapContainer from "./MapContainer.svelte";    
 
     let url = "https://api.spacexdata.com/v4/launchpads";
 
@@ -12,11 +12,10 @@
 {#if $loading}
 Loading: {$loading}
 {:else if $error}
-Error: {$error}
+<!-- Error: {$error} -->
+Nothing Found!
 {:else}
-
-google map
-<GoogleMap launchpads={$data} />
+<MapContainer launchpads={$data} />
 <!-- {#each $data as launchpad}
     <p>{launchpad.full_name}</p>
     <small>Latitude: {launchpad.latitude}</small>

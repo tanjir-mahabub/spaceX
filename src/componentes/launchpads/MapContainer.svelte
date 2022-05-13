@@ -8,7 +8,8 @@
 
 
 <Map lat={35} lon={-84} zoom={3.5}>
-	{#each launchpads as launchpad}    
+	{#each launchpads as launchpad}   
+  test 
     {
       card = `      
       <h4 class='font-extrabold leading-normal'>${launchpad.full_name}</h4>
@@ -16,8 +17,5 @@
       `
     }
     <MapMarker lat={launchpad.latitude} lon={launchpad.longitude} label={card}/>
-   
-  {:else}
-    Nothing Found!
   {/each}
 </Map>
