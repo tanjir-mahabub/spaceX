@@ -31,8 +31,8 @@
     }
 </script>
 
-<header class="w-full shadow-lg sticky top-0 z-40 backdrop-blur flex-none transition-colors duration-500 lg:z-50 lg:border-b lg:border-slate-900/10 border-slate-50/[0.06] supports-backdrop-blur:bg-white/95 bg-slate-900/75">
-    <nav transition:slide|local class="border-gray-200 px-2 md:h-20 md:flex items-center">
+<header class="w-full shadow-lg sticky top-0 z-40 backdrop-blur flex-none transition-colors duration-500 lg:z-50 lg:border-b supports-backdrop-blur:bg-white/95 bg-slate-900/75 border-b border-slate-50/10">
+    <nav transition:slide|local class="px-2 md:h-20 md:flex items-center">
         <div class="container mx-auto flex flex-wrap items-center justify-between px-3">
           <a href="/" class="flex">           
               <span class="self-center md:text-4xl text-3xl font-extrabold whitespace-nowrap pb-3">SapceX</span>

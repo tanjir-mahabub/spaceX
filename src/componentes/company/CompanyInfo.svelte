@@ -15,7 +15,7 @@ Loading: {$loading}
 <!-- Error: {$error} -->
 Nothing found!
 {:else}
-<div class="container w-full mx-auto">
+<div class="w-full mx-auto bg-gradient-to-r from-slate-900 to-slate-900/5">
     <Content content={$data} />
     <!-- <pre>{JSON.stringify($data, null, 2)}</pre> -->
 </div>
