@@ -1,4 +1,5 @@
 <script>
+    import Content from "./Content.svelte";
     import company from "../../stores/fetchStore";
 
     let url = "https://api.spacexdata.com/v4/company"
@@ -15,7 +16,9 @@ Loading: {$loading}
 Nothing found!
 {:else}
 <div class="container w-full mx-auto">
-
+    <Content content={$data} />
     <!-- <pre>{JSON.stringify($data, null, 2)}</pre> -->
 </div>
 {/if}
+
+
