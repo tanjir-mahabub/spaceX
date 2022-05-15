@@ -6,7 +6,7 @@ A simple api project using svelte and tailwind css
 
 ## Installation
 
-Install my-project with npm
+Install spaceX app with npm
 
 ```bash
   npm install spaceX-main
