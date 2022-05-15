@@ -32,7 +32,7 @@
 	<div class="layer" />
 </div>
 
-<div class="container mx-auto grid md:grid-cols-2 h-full items-center justify-between px-6">
+<div class="container mx-auto grid md:grid-cols-2 h-full items-center justify-between px-6 overflow-x-hidden">
 	<div class="my-5 w-full grid content-center space-y-10 select-none z-20">
 		
 		<p class="max-h-full">{content.summary}</p>
