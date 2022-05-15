@@ -1,6 +1,5 @@
 <script>
   export let launchpads;
-  import Image from '../Image/Image.svelte';
 	import Map from './Map.svelte';
 	import MapMarker from './MapMarker.svelte';
   let card;
@@ -12,7 +11,7 @@
   test 
     {
       card = `      
-      <h4 class='font-extrabold leading-normal'>${launchpad.full_name}</h4>
+        <h4 class='font-extrabold leading-tight'>${launchpad.full_name}</h4>
         <p>${launchpad.name}</p>
       `
     }

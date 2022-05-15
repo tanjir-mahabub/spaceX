@@ -7,5 +7,4 @@ import Launch from "../componentes/launches/Launch.svelte";
     <title>Launches</title>
 </svelte:head>
 
-<h1 class="text-3xl font-bold text-navy container w-full mx-auto">Launches</h1>
 <Launch />

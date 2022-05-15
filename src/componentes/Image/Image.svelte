@@ -1,12 +1,19 @@
 {#if loaded}
-	<img {src} alt="Document" />
+	{#if src}	
+		<img {src} alt="Document" />
+	{:else}
+	<img src="{notFoundImg}" alt="Not Found" />
+	{/if}
 {:else if failed}
-	<img src="https://icon-library.com/images/not-found-icon/not-found-icon-20.jpg" alt="Not Found" />
+	<img src="{notFoundImg}" alt="Not Found" />
 {:else if loading}
-	<img src="https://c.tenor.com/On7kvXhzml4AAAAi/loading-gif.gif" alt="Loading..." />
+	<img src="{loader}" alt="Loading..." class="opacity-20 p-5"/>
 {/if}
 
 <script>
+	import notFoundImg from '../../images/not-found-icon.jpg';
+	import loader from '../../images/loading-gif.gif';
+
 	import { onMount } from 'svelte'
 	export let src;
 

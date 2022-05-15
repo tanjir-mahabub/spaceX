@@ -36,15 +36,8 @@
 	/>
 </svelte:head>
 
-<div class="min-h-screen w-full" bind:this={container}>
+<div class="min-h-screen w-full h-full" bind:this={container}>
 	{#if map}
 		<slot />	
 	{/if} 
 </div>
-
-<style>
-	div {
-		width: 100%;
-		height: 100%;
-	}
-</style>

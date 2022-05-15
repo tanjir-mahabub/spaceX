@@ -3,29 +3,42 @@
 @tailwind utilities;
 
 
+.mapPopup {
+    @apply w-56;
+}
+
 .mapPopup .mapboxgl-popup-close-button {
     @apply m-1 px-2 py-0 hover:shadow-lg bg-slate-900/75 text-slate-200 hover:text-slate-900 hover:border-slate-900 hover:border-4 rounded;
 }
 
 .mapPopup .mapboxgl-popup-content {
-    @apply bg-slate-200 text-slate-900 p-5;
+    @apply bg-slate-300 text-slate-900 p-5;
 }
 
 .earth-img {
     @apply container mx-auto;
 }
 .earth-img {
-    @apply shadow-lg shadow-indigo-900 w-[550px] h-[550px] rounded-[100%] bg-cover test animate-myspin;
+    @apply shadow-lg shadow-indigo-900 w-[550px] h-[550px] rounded-[100%] bg-cover map-image animate-mapspin;
+}
+
+.mapboxgl-ctrl {
+    @apply hidden !important;
+}
+
+.rocket {
+    @apply bg-repeat bg-scroll bg-top bg-white rounded-tl-[99%] rounded-tr-[40%] rounded-br-[0%] rounded-bl-[20%] shadow-lg z-10;
 }
 
 
 @layer components {
-    .test {
-        background: url('https://forum.generic-mapping-tools.org/uploads/default/original/1X/8bf44a8e7f7c4c4aeced0fbb6346e4e2257a8341.jpeg');
+    
+    .map-image {
+        background: url('./src/images/map-three.jpeg');
     }
 
     .bg {
-        background: url('./src/images/galaxy.jpg') no-repeat;
+        background: url('./src/images/galaxy.jpg');
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center center;
