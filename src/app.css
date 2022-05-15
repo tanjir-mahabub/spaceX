@@ -34,11 +34,11 @@
 @layer components {
     
     .map-image {
-        background: url('./src/images/map-three.jpeg');
+        background: url('images/map-three.jpeg');
     }
 
     .bg {
-        background: url('./src/images/galaxy.jpg');
+        background: url('images/galaxy.jpg');
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center center;
