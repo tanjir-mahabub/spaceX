@@ -26,9 +26,7 @@ import Image from '../Image/Image.svelte';
     </div>
     <div class="">
         <h4 class="text-md font-bold">{launch.name}</h4>
-        <small><b>Launch Date: {launchDate(launch.date_utc)}</b></small>
-        <small>Success Status: {launch.success}</small>
-        <small>Upcoming: {launch.upcoming}</small>
+        <small><b>Launch Date: {launchDate(launch.date_utc)}</b></small><br>
         <small>Flight Number: {launch.flight_number}</small>
     </div>
 </div>
