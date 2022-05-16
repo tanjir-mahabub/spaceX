@@ -1,6 +1,4 @@
 <script>
-  import { slide } from 'svelte/transition';
-
   import { onMount } from 'svelte';
 
   let url;
@@ -13,7 +11,6 @@
   })
   
     let navList; 
-    let navLink;
     let lineOne;
     let lineTwo;
     let lineThree;
@@ -42,8 +39,8 @@
     }
 </script>
 
-<header class="w-full shadow-lg sticky top-0 z-40 backdrop-blur flex-none transition-colors duration-500 lg:z-50 lg:border-b supports-backdrop-blur:bg-white/95 bg-slate-900/75 border-b border-slate-50/10">
-    <nav transition:slide|local class="px-3 md:h-20 md:flex items-center">
+<header class="w-full shadow-lg sticky top-0 z-40 backdrop-blur flex-none transition-colors duration-500 lg:z-50 lg:border-b bg-slate-900/75 border-b border-slate-50/10">
+    <nav class="px-3 md:h-20 md:flex items-center">
         <div class="container mx-auto flex flex-wrap items-center justify-between px-3">
           <a href="/" class="flex">           
               <span class="self-center md:text-4xl text-3xl font-extrabold whitespace-nowrap pb-3">SapceX</span>
@@ -60,13 +57,13 @@
           <div bind:this={navList} class="hidden md:block w-full md:w-auto h-full md:pb-0 pb-5 transition-all duration-1000 ease-in-out" id="mobile-menu">
             <ul class="flex-col md:flex-row flex md:space-x-8 mt-4 md:mt-0 md:text-sm md:font-medium">
               <li>
-                <a on:click={currentLink} bind:this={navLink} href="/" class="md:hover:bg-transparent text-slate-400 hover:bg-slate-400 border-b border-slate-400 md:border-0 block pl-3 pr-4 py-2 md:hover:text-blue-700 md:p-0 text-xl">Home</a>
+                <a on:click={currentLink} href="/" class="md:hover:bg-transparent text-slate-400 hover:bg-slate-400 border-b border-slate-400 md:border-0 block pl-3 pr-4 py-2 md:hover:text-blue-700 md:p-0 text-xl">Home</a>
               </li>
               <li>
-                <a on:click={currentLink} bind:this={navLink} href="/launches" class="text-slate-400 hover:bg-slate-400 border-b border-slate-400 md:hover:bg-transparent md:border-0 block pl-3 pr-4 py-2 md:hover:text-blue-700 md:p-0 text-xl">Launches</a>
+                <a on:click={currentLink} href="/launches" class="text-slate-400 hover:bg-slate-400 border-b border-slate-400 md:hover:bg-transparent md:border-0 block pl-3 pr-4 py-2 md:hover:text-blue-700 md:p-0 text-xl">Launches</a>
               </li>
               <li>
-                <a on:click={currentLink} bind:this={navLink} href="/launchpads" class="text-slate-400 hover:bg-slate-400 border-b border-slate-400 md:hover:bg-transparent md:border-0 block pl-3 pr-4 py-2 md:hover:text-blue-700 md:p-0 text-xl">Launchpads</a>
+                <a on:click={currentLink} href="/launchpads" class="text-slate-400 hover:bg-slate-400 border-b border-slate-400 md:hover:bg-transparent md:border-0 block pl-3 pr-4 py-2 md:hover:text-blue-700 md:p-0 text-xl">Launchpads</a>
               </li>              
             </ul>
           </div>
